@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D6575A6428AAD19C0056E182 /* UITestingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6575A6328AAD19C0056E182 /* UITestingApp.swift */; };
-		D6575A6628AAD19C0056E182 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6575A6528AAD19C0056E182 /* ContentView.swift */; };
+		D6575A6628AAD19C0056E182 /* UITestingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6575A6528AAD19C0056E182 /* UITestingView.swift */; };
 		D6575A6828AAD19D0056E182 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6575A6728AAD19D0056E182 /* Assets.xcassets */; };
 		D6575A6B28AAD19D0056E182 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6575A6A28AAD19D0056E182 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -16,7 +16,7 @@
 /* Begin PBXFileReference section */
 		D6575A6028AAD19C0056E182 /* UITesting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UITesting.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6575A6328AAD19C0056E182 /* UITestingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITestingApp.swift; sourceTree = "<group>"; };
-		D6575A6528AAD19C0056E182 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D6575A6528AAD19C0056E182 /* UITestingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITestingView.swift; sourceTree = "<group>"; };
 		D6575A6728AAD19D0056E182 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D6575A6A28AAD19D0056E182 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -52,7 +52,7 @@
 			isa = PBXGroup;
 			children = (
 				D6575A6328AAD19C0056E182 /* UITestingApp.swift */,
-				D6575A6528AAD19C0056E182 /* ContentView.swift */,
+				D6575A6528AAD19C0056E182 /* UITestingView.swift */,
 				D6575A6728AAD19D0056E182 /* Assets.xcassets */,
 				D6575A6928AAD19D0056E182 /* Preview Content */,
 			);
@@ -137,7 +137,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D6575A6628AAD19C0056E182 /* ContentView.swift in Sources */,
+				D6575A6628AAD19C0056E182 /* UITestingView.swift in Sources */,
 				D6575A6428AAD19C0056E182 /* UITestingApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
