@@ -24,23 +24,25 @@ class UITestingView_UITests: XCTestCase {
     
     func test_UITestingView_signUpButton_shouldSignIn() {
         //Given
-        let textfield = app.textFields["Add your name..."].tap()
+        let textfield = app.textFields["SignUpTextfield"]
         
         //When
-        textfield
+        textfield.tap()
         
         let keyA = app.keys["A"]
         keyA.tap()
-        keyA.tap()
-        keyA.tap()
+        
+        let keya = app.keys["a"]
+        keya.tap()
+        keya.tap()
         
         let returnButton = app.buttons["Return"]
         returnButton.tap()
         
-        let signUpButton = app.buttons["Sign Up"]
-        returnButton.tap()
+        let signUpButton = app.buttons["SignUpButton"]
+        signUpButton.tap()
         
-        let navBar = app.navigationBars["Welcome"]
+        let navBar = app.navigationBars["Welcome!"]
         
         //Then
         XCTAssertTrue(navBar.exists)

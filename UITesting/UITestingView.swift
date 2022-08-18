@@ -65,7 +65,8 @@ extension UITestingView {
                 .font(.headline)
                 .padding()
                 .background(.white)
-                .cornerRadius(19)
+                .cornerRadius(10)
+                .accessibilityIdentifier("SignUpTextfield")
             
             Button {
                 withAnimation(.spring()) {
@@ -79,6 +80,7 @@ extension UITestingView {
                     .foregroundColor(.white)
                     .background(.blue)
                     .cornerRadius(10)
+                    .accessibilityIdentifier("SignUpButton")
             }
             
         }
