@@ -13,6 +13,11 @@ class UITestingViewModel: ObservableObject {
     @Published var textfieldText: String = ""
     @Published var currentUserIsSignedIn: Bool = false
     
+    init(currentUserSignedIn: Bool) {
+        self.currentUserIsSignedIn = currentUserSignedIn
+        
+    }
+    
     func signUpButtonPressed() {
         guard !textfieldText.isEmpty else { return }
         currentUserIsSignedIn = true
@@ -22,7 +27,11 @@ class UITestingViewModel: ObservableObject {
 
 struct UITestingView: View {
     
-    @StateObject var vm = UITestingViewModel()
+    @StateObject var vm: UITestingViewModel
+    
+    init(currentUserSignedIn: Bool) {
+        _vm = StateObject(wrappedValue: UITestingViewModel(currentUserSignedIn: currentUserSignedIn))
+    }
     
     var body: some View {
         ZStack {
@@ -53,7 +62,7 @@ struct UITestingView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        UITestingView()
+        UITestingView(currentUserSignedIn: true)
     }
 }
 

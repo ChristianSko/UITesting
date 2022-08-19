@@ -12,9 +12,14 @@ class UITestingView_UITests: XCTestCase {
     let app = XCUIApplication()
     
     override func setUpWithError() throws {
+        continueAfterFailure = false
+        
+        // Use this for Dependency Injection setup for it to started logged in
+//        app.launchArguments = ["-UITest_startSignedIn"]
         
         app.launch()
-        continueAfterFailure = false
+        
+        
          
     }
     
@@ -94,6 +99,17 @@ class UITestingView_UITests: XCTestCase {
         let navBar = app.navigationBars["Welcome!"]
         XCTAssertTrue(navBar.exists)
     }
+    
+//    func test_SignedInHomeView_NavigationLinkToDestinationButton_shouldNavigateToDestinationAndGoBack2() {
+//        //Given
+//
+//        //When
+//        tapNavigationLink(shouldDismissDestination: true)
+//
+//        //Then
+//        let navBar = app.navigationBars["Welcome!"]
+//        XCTAssertTrue(navBar.exists)
+//    }
 }
 
 extension UITestingView_UITests {
